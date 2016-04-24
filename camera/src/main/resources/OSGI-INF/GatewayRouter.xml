@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" 
-    name="io.rhiot.quickstarts.kura.camel.GatewayRouter"
+    name="io.rhiot.kurademo.camera.CameraSensor"
 	configuration-policy="require" enabled="true" immediate="true"
     activate="activate" deactivate="deactivate" modified="modified">
-	<implementation class="io.rhiot.quickstarts.kura.camel.GatewayRouter"/>
+	<implementation class="io.rhiot.kurademo.camera.CameraSensor"/>
 	<service>
-		<provide interface="io.rhiot.quickstarts.kura.camel.GatewayRouter"/>
+		<provide interface="io.rhiot.kurademo.camera.CameraSensor"/>
 	</service>
-	<property name="service.pid" type="String" value="io.rhiot.quickstarts.kura.camel.GatewayRouter"/>
+	<property name="service.pid" type="String" value="io.rhiot.kurademo.camera.CameraSensor"/>
 </scr:component>
